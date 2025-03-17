@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo_MyBatis.mybatis.UserMapperXml">
+
+    <select id="selectAllUsers" resultType="com.example.demo_MyBatis.model.UserDao">
+        SELECT * FROM Users
+    </select>
+
+    <select id="selectUserById" parameterType="int" resultType="com.example.demo_MyBatis.model.UserDao">
+        SELECT * FROM Users WHERE id = #{id}
+    </select>
+
+    <delete id="deleteUserById" parameterType="int">
+        DELETE FROM Users WHERE id = #{id}
+    </delete>
+
+    <update id="updateUser" parameterType="com.example.demo_MyBatis.model.UserDao">
+        UPDATE Users
+        SET name = #{name}, email = #{email}
+        WHERE id = #{id}
+    </update>
+
+    <insert id="insertUser" parameterType="com.example.demo_MyBatis.model.UserDao" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO Users (name, email)
+        VALUES (#{name}, #{email})
+    </insert>
+
+</mapper>
