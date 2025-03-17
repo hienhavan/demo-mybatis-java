@@ -7,11 +7,6 @@ MyBatis là một framework ORM Java, giúp lập trình viên tương tác vớ
 
  **XML Mapper Files:** Định nghĩa trong các tệp XML riêng biệt, giúp quản lý các câu lệnh SQL phức tạp và dễ dàng bảo trì hơn.
 
-## Cấu trúc dự án
-
-Dự án được tổ chức theo cấu trúc sau:
-
-
 ## Hướng dẫn khởi động dự án
 
  **Cài đặt Docker và Docker Compose:** Đảm bảo rằng Docker và Docker Compose đã được cài đặt trên hệ thống của bạn.
