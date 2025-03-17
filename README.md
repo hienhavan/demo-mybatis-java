@@ -1,7 +1,5 @@
 
-Dự án minh họa cách tích hợp MyBatis vào ứng dụng Spring Boot để quản lý và truy xuất dữ liệu từ cơ sở dữ liệu.
-
-## Giới thiệu về MyBatis
+## MyBatis
 
 MyBatis là một framework ORM Java, giúp lập trình viên tương tác với cơ sở dữ liệu một cách linh hoạt thông qua các câu lệnh SQL tùy chỉnh. MyBatis hỗ trợ hai cách định nghĩa câu lệnh SQL:
 
